@@ -1,12 +1,16 @@
+
+
+
+
 //Clase de Vehiculo
-export class Vehiculo {
+export class Vehiculo{
   #marca;
   #modelo;
   #color;
   #anoFabricacion;
   #cilindra;
 
-   constructor (marca, modelo, color, anoFabricacion, cilindra) {
+  constructor(marca, modelo, color, anoFabricacion, cilindra) {
     super(marca, modelo, color, anoFabricacion, cilindra);
     this.marca = marca;
     this.modelo = modelo;
@@ -16,9 +20,6 @@ export class Vehiculo {
   }
 
   //Metodos de la clase
-  mostrarDatos(texto) {
-    return `Marca: ${this.marca} // Modelo: ${this.modelo} // Color: ${this.color} // Año de fabricación: ${this.anoFabricacion} // Cilindrada: ${this.cilindra}`;
-  }
 
   acelerar(velocidad) {
     return `El vehículo acelera a ${velocidad} km/h`;

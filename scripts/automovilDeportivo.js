@@ -3,8 +3,8 @@ import { Vehiculo } from "./vehiculo.js";
 export class AutomovilDeportivo extends vehiculo {
   #potenciaMotor;
 
-  constructor(marca, modelo, color, añoFabricacion, cilindrada) {
-    super(marca, modelo, color, añoFabricacion, cilindrada);
+  constructor(marca, modelo, color, añoFabricacion, cilindrada,potenciaMotor) {
+    super(marca, modelo, color, añoFabricacion, cilindrada, potenciaMotor);
     this.#potenciaMotor = 0;
   }
 
@@ -21,4 +21,8 @@ export class AutomovilDeportivo extends vehiculo {
   setactivarMotorDeportivo(activarMotorDeportivo) {
     return this.#potenciaMotor;
   }
+
+
+
+  
 }
