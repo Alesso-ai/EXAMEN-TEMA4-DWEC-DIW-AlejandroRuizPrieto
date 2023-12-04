@@ -1,7 +1,47 @@
 @font-face {
-    font-family: "NovaSquare-Regular";
-    src: url("../assets/fonts/NovaSquare-Regular.ttf") format("truetype");
-  }
-  
- 
+  font-family: "NovaSquare-Regular";
+  src: url("../assets/fonts/NovaSquare-Regular.ttf") format("truetype");
+}
 
+body {
+  background-image: url("../assets/imgs/Fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+h1 {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 25ch;
+  color: white;
+  overflow: hidden;
+  animation: typing 5s steps(25), blink 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.degradado {
+  background: linear-gradient(to right, #ff0000, #d9ff00, #0000ff);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.999);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  margin-left: 25%;
+  border-radius: 10px;
+  font-size: 1em;
+  color: black;
+}

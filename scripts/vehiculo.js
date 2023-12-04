@@ -1,7 +1,5 @@
 import { mostrarResultado } from "./main.js";
 
-
-
 //Clase de Vehiculo
 export class Vehiculo{
   #marca;
@@ -21,14 +19,17 @@ export class Vehiculo{
   //Metodos de la clase
 
   acelerar(velocidad) {
-    return `El vehículo acelera a ${velocidad} km/h`;
+    const mensaje =`El vehículo acelera a ${velocidad} km/h`;
+    mostrarResultado(mensaje);
   }
   arrancar() {
-    return `El vehículo ha arrancado`;
+    const mensaje = `El vehículo ha arrancado`;
+    mostrarResultado(mensaje);
   }
 
   frenar() {
-    return `El vehículo ha frenado`;
+    const mensaje = `El vehículo ha frenado`;
+    mostrarResultado(mensaje);
   }
 
   mostrarResultado() {
@@ -55,25 +56,29 @@ export class Vehiculo{
     return this.cilindra;
   }
 
-  setMarca(marca) {
-    this.marca = marca;
+  setMarca(value) {
+    this.marca = value;
   }
 
-  setModelo(modelo) {
-    this.modelo = modelo;
+  setModelo(value) {
+    this.modelo = value;
   }
 
-  setColor(color) {
-    this.color = color;
+  setColor(value) {
+    this.color = value;
   }
 
-  setAnoFabricacion(AnoFabricacion) {
-    this.AnoFabricacion = AnoFabricacion;
+  setAnoFabricacion(value) {
+    this.AnoFabricacion = value;
   }
 
-  setCilindrada(cilindra) {
-    this.cilindra = cilindra;
+  setCilindrada(value) {
+    this.cilindra = cilindrada;
   }
+
+
+
+  
 
   mostrarDatos() {
     const dato = `<p>La marca es:  ${this.marca} <br> El modelo es: ${
@@ -85,6 +90,7 @@ export class Vehiculo{
      mostrarResultado(`<p>${dato}</p>`)
   }
   
+
 }
 
 
