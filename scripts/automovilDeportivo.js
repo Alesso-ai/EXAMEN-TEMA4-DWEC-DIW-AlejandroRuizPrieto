@@ -1,6 +1,6 @@
 import { Vehiculo } from "./vehiculo.js";
 
-export class AutomovilDeportivo extends vehiculo {
+export class AutomovilDeportivo extends Vehiculo {
   #potenciaMotor;
 
   constructor(marca, modelo, color, añoFabricacion, cilindrada,potenciaMotor) {
@@ -11,7 +11,7 @@ export class AutomovilDeportivo extends vehiculo {
   //Metodos
   activarMotorDeportivo() {
     this.#potenciaMotor = 0;
-    return `El motor deportivo se ha activado`;
+    return `El modo deportivo se ha activado`;
   }
 
   //Getter y Setter
@@ -24,5 +24,5 @@ export class AutomovilDeportivo extends vehiculo {
 
 
 
-  
+
 }

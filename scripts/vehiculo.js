@@ -11,7 +11,6 @@ export class Vehiculo{
   #cilindra;
 
   constructor(marca, modelo, color, anoFabricacion, cilindra) {
-    super(marca, modelo, color, anoFabricacion, cilindra);
     this.marca = marca;
     this.modelo = modelo;
     this.color = color;
@@ -77,10 +76,10 @@ export class Vehiculo{
   }
 
   mostrarDatos() {
-    return `La marca es:  ${this.marca}, El modelo es: ${
+    let dato = `<p>La marca es:  ${this.marca}, El modelo es: ${
       this.modelo
     },  El color es:  ${this.color}, El año de fabricacion es: ${
       this.AnoFabricacion
-    }, La cilindrada es: ${this.#cilindra}`;
+    }, La cilindrada es: ${this.#cilindra} <p/>`;
   }
 }
