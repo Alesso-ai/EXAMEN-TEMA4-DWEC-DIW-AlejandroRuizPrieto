@@ -6,7 +6,8 @@ export class Vehiculo {
   #anoFabricacion;
   #cilindra;
 
-   constructor(marca, modelo, color, anoFabricacion, cilindra) {
+   constructor (marca, modelo, color, anoFabricacion, cilindra) {
+    super(marca, modelo, color, anoFabricacion, cilindra);
     this.marca = marca;
     this.modelo = modelo;
     this.color = color;
@@ -15,7 +16,7 @@ export class Vehiculo {
   }
 
   //Metodos de la clase
-  mostrarDatos() {
+  mostrarDatos(texto) {
     return `Marca: ${this.marca} // Modelo: ${this.modelo} // Color: ${this.color} // Año de fabricación: ${this.anoFabricacion} // Cilindrada: ${this.cilindra}`;
   }
 
