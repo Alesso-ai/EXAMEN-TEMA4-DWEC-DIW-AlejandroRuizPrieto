@@ -5,12 +5,13 @@ import { Vehiculo } from "./vehiculo.js";
 import { AutomovilDeportivo } from "./automovilDeportivo.js";
 
 const resultadosContainer = document.createElement("div");
+document.body.appendChild(resultadosContainer);
 
 resultadosContainer.innerHTML = "";
 
 export function mostrarResultado(dato) {
-  document.body.appendChild(resultadosContainer);
-  resultadosContainer.innerHTML += `<p>${vehiculo1}</p>`;
+  //document.body.appendChild(resultadosContainer);
+  resultadosContainer.innerHTML += `<p>${dato}</p>`;
 }
 
 const vehiculo1 = new Vehiculo("BMW", "CLK", "Rojo", 1992, "2400");
@@ -35,7 +36,7 @@ deportivo1.acelerar(200);
 deportivo1.frenar();
 deportivo1.activarMotorDeportivo(1);
 
-const object = {
+  const object = {
   marca: vehiculo1.marca,
   modelo: vehiculo1.modelo,
   color: vehiculo1.color,

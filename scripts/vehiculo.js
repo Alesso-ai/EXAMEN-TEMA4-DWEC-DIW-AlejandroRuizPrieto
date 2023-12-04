@@ -76,11 +76,11 @@ export class Vehiculo{
   }
 
   mostrarDatos() {
-    const dato = `<p>La marca es:  ${this.marca}, El modelo es: ${
+    const dato = `<p>La marca es:  ${this.marca} <br> El modelo es: ${
       this.modelo
-    },  El color es:  ${this.color}, El año de fabricacion es: ${
+    }<br>  El color es:  ${this.color} <br> El año de fabricacion es: ${
       this.AnoFabricacion
-    }, La cilindrada es: ${this.#cilindra} <p/>`;
+    }<br> La cilindrada es: ${this.#cilindra} <p/>`;
     
      mostrarResultado(`<p>${dato}</p>`)
   }
