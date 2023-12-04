@@ -1,7 +1,7 @@
 import { mostrarResultado } from "./main.js";
 
 //Clase de Vehiculo
-export class Vehiculo{
+export class Vehiculo {
   #marca;
   #modelo;
   #color;
@@ -19,7 +19,7 @@ export class Vehiculo{
   //Metodos de la clase
 
   acelerar(velocidad) {
-    const mensaje =`El vehículo acelera a ${velocidad} km/h`;
+    const mensaje = `El vehículo acelera a ${velocidad} km/h`;
     mostrarResultado(mensaje);
   }
   arrancar() {
@@ -34,7 +34,13 @@ export class Vehiculo{
 
   mostrarResultado() {
     resultados.innerHTML += `<p>${this.mostrarDatos()}</p>`;
-  } 
+  }
+
+  mostrarDatos() {
+    const dato = `<p>La marca es:  ${this.marca} <br> El modelo es: ${this.modelo}<br>  El color es:  ${this.color} <br> El año de fabricacion es: ${this.anoFabricacion}<br> La cilindrada es: ${this.cilindrada} <p/>`;
+
+    mostrarResultado(`<p>${dato}</p>`);
+  }
 
   //Getters y Setters
   getMarca() {
@@ -75,21 +81,4 @@ export class Vehiculo{
   setcilindrada(value) {
     this.cilindrada = cilindrada;
   }
-
-
-  mostrarDatos() {
-    const dato = `<p>La marca es:  ${this.marca} <br> El modelo es: ${
-      this.modelo
-    }<br>  El color es:  ${this.color} <br> El año de fabricacion es: ${
-      this.anoFabricacion
-    }<br> La cilindrada es: ${this.cilindrada} <p/>`;
-    
-     mostrarResultado(`<p>${dato}</p>`)
-  }
-  
-
 }
-
-
-
-

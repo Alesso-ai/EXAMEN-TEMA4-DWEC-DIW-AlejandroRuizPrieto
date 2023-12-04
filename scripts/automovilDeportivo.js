@@ -4,24 +4,23 @@ import { mostrarResultado } from "./main.js";
 export class AutomovilDeportivo extends Vehiculo {
   #potenciaMotor;
 
-  constructor(marca, modelo, color, añoFabricacion, cilindrada,potenciaMotor) {
-    super(marca, modelo, color, añoFabricacion, cilindrada, potenciaMotor);
-    this.#potenciaMotor = 0;
+  constructor(marca, modelo, color, anoFabricacion, cilindrada, potenciaMotor) {
+    super(marca, modelo, color, anoFabricacion, cilindrada,);
+    this.#potenciaMotor = potenciaMotor;
   }
 
   //Metodos
   activarMotorDeportivo() {
-    const mensaje = `El modo deportivo se ha activado`;
-    this.#potenciaMotor = 0;
+    const mensaje = `${this.marca} ${this.modelo} ha activado el modo deportivo`;
     mostrarResultado(mensaje);
   }
 
-  //Getter y Setter
-  getactivarMotorDeportivo() {
-    return this.#potenciaMotor;
-  }
-  setactivarMotorDeportivo(activarMotorDeportivo) {
+  //Getters Y setters
+  getpotenciaMotor() {
     return this.#potenciaMotor;
   }
 
+  setpotenciaMotor(value) {
+    this.#potenciaMotor = value;
+  }
 }

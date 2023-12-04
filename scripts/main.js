@@ -34,9 +34,11 @@ vehiculo1.frenar();
   cilindrada: vehiculo1.cilindrada,
 };
 
-
-
+/*Borrar el localSotrage para empezar de 0 */
+localStorage.clear();
+/*Guardaddo objeto de vehiculo en localStorage*/
 localStorage.setItem("vehiculo1", JSON.stringify(vehiculoObject));
+/*Mostrar por consola vehiculoObject*/
 console.log(JSON.parse(localStorage.getItem("vehiculo1")));
 
 
@@ -73,12 +75,19 @@ const deportivoObject = {
 localStorage.setItem("deportivo1", JSON.stringify(deportivoObject));
 console.log(JSON.parse(localStorage.getItem("deportivo1")));
 
+ /* Bucle que recorre deportivoObject
+    y almacena todos los campos en el localStorage */
+    for(let key in deportivoObject){
+      if(deportivoObject.hasOwnProperty(key)){
+          localStorage.setItem(key, JSON.stringify(deportivoObject[key]));
+      }
+  }
 
 
-
-//localStorage.removeItem("marca");
-//localStorage.removeItem("modelo");
-//localStorage.clear();
-
+ /* Elimina un campo del localStorage */
+ localStorage.removeItem('marca');
+ localStorage.removeItem('vehiculo');
+ /*Elimina todos los campos del localStorage */
+ /* localStorage.clear(); */
 
 
