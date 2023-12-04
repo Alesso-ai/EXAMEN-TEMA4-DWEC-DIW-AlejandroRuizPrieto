@@ -77,9 +77,6 @@ export class Vehiculo{
   }
 
 
-
-  
-
   mostrarDatos() {
     const dato = `<p>La marca es:  ${this.marca} <br> El modelo es: ${
       this.modelo

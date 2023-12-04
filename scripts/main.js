@@ -18,6 +18,8 @@ export function mostrarResultado(dato) {
 
 const vehiculo1 = new Vehiculo("BMW", "CLK", "Rojo", 1992, "2400");
 
+mostrarResultado("----VEHICULO----");
+
 vehiculo1.mostrarDatos();
 vehiculo1.arrancar();
 vehiculo1.acelerar(140);
@@ -29,7 +31,7 @@ vehiculo1.frenar();
   marca : vehiculo1.marca,
   modelo: vehiculo1.modelo,
   color: vehiculo1.color,
-  añoFabricacion: vehiculo1.añoFabricacion,
+  anoFabricacion: vehiculo1.anoFabricacion,
   cilindrada: vehiculo1.cilindrada,
 };
 
@@ -47,21 +49,23 @@ const deportivo1 = new AutomovilDeportivo(
   "500"
 );
 
-
-const deportivoObject = {
-  marca: deportivo1.marca,
-  modelo: deportivo1.modelo,
-  color: deportivo1.color,
-  añoFabricacion: deportivo1.añoFabricacion,
-  cilindrada: deportivo1.cilindrada,
-  potenciaMotor: deportivo1.potenciaMotor,
-};
+mostrarResultado("----DEPORTIVO----");
 
 deportivo1.mostrarDatos();
 deportivo1.arrancar();
 deportivo1.acelerar(200);
 deportivo1.frenar();
-deportivo1.activarMotorDeportivo(1);
+deportivo1.activarMotorDeportivo();
+
+const deportivoObject = {
+  marca: deportivo1.marca,
+  modelo: deportivo1.modelo,
+  color: deportivo1.color,
+  anoFabricacion: deportivo1.anoFabricacion,
+  cilindrada: deportivo1.cilindrada,
+  potenciaMotor: deportivo1.potenciaMotor,
+};
+
 
 
 //Alamcenar en localStorage
