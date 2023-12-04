@@ -11,6 +11,7 @@ body {
   color: white;
 }
 
+/*Keyframes*/
 @keyframes typing {
   from {
     width: 0;
@@ -23,6 +24,7 @@ body {
   }
 }
 
+/*Degradado y sombras*/
 .degradado {
   background: linear-gradient(to right, #ff0000, #d9ff00, #0000ff);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.999);
@@ -48,6 +50,7 @@ h1 {
   animation: typing 5s steps(25), blink 0.5s infinite step-end alternate;
 }
 
+/*Pseudoselectores*/
 &:hover {
   background-color: var(--hover-color);
   cursor: pointer;

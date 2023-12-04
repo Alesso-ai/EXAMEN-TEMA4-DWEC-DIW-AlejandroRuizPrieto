@@ -13,8 +13,6 @@ export function mostrarResultado(dato) {
   resultadosContainer.innerHTML += `<p>${dato}</p>`;
 }
 
-
-
 const vehiculo1 = new Vehiculo("BMW", "CLK", "Rojo", 1992, "2400");
 
 mostrarResultado("----VEHICULO----");
@@ -24,10 +22,9 @@ vehiculo1.arrancar();
 vehiculo1.acelerar(140);
 vehiculo1.frenar();
 
-
 //Objetos
-  const vehiculoObject = {
-  marca : vehiculo1.marca,
+const vehiculoObject = {
+  marca: vehiculo1.marca,
   modelo: vehiculo1.modelo,
   color: vehiculo1.color,
   anoFabricacion: vehiculo1.anoFabricacion,
@@ -40,7 +37,6 @@ localStorage.clear();
 localStorage.setItem("vehiculo1", JSON.stringify(vehiculoObject));
 /*Mostrar por consola vehiculoObject*/
 console.log(JSON.parse(localStorage.getItem("vehiculo1")));
-
 
 const deportivo1 = new AutomovilDeportivo(
   "Ferrari",
@@ -68,27 +64,31 @@ const deportivoObject = {
   potenciaMotor: deportivo1.potenciaMotor,
 };
 
-
-
 //Alamacenar en localStorage
 
 localStorage.setItem("deportivo1", JSON.stringify(deportivoObject));
 console.log(JSON.parse(localStorage.getItem("deportivo1")));
 
- /* Bucle que recorre deportivoObject
+/* Bucle que recorre deportivoObject
     y almacena todos los campos en el localStorage */
-    for(let key in deportivoObject){
-      if(deportivoObject.hasOwnProperty(key)){
-          localStorage.setItem(key, JSON.stringify(deportivoObject[key]));
-      }
+for (let key in deportivoObject) {
+  if (deportivoObject.hasOwnProperty(key)) {
+    localStorage.setItem(key, JSON.stringify(deportivoObject[key]));
   }
+}
 
+/* Elimina un campo del localStorage */
+localStorage.removeItem("marca");
+localStorage.removeItem("vehiculo");
 
- /* Elimina un campo del localStorage */
- localStorage.removeItem('marca');
- localStorage.removeItem('vehiculo');
+/*Elimina todos los campos del localStorage */
+/* localStorage.clear(); */
 
- /*Elimina todos los campos del localStorage */
- /* localStorage.clear(); */
+/*Otro Vehiculo para el scroll*/
+mostrarResultado("----La C4 de los CHACHOS----");
+const vehiculo2 = new Vehiculo("Citroen", "C4", "Negro", 1999, "1600");
 
-
+vehiculo2.mostrarDatos();
+vehiculo2.arrancar();
+vehiculo2.acelerar(90);
+vehiculo2.frenar();

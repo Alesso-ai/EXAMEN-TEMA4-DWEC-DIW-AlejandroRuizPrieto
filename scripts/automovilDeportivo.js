@@ -5,7 +5,7 @@ export class AutomovilDeportivo extends Vehiculo {
   #potenciaMotor;
 
   constructor(marca, modelo, color, anoFabricacion, cilindrada, potenciaMotor) {
-    super(marca, modelo, color, anoFabricacion, cilindrada,);
+    super(marca, modelo, color, anoFabricacion, cilindrada);
     this.#potenciaMotor = potenciaMotor;
   }
 
