@@ -1,3 +1,6 @@
+//Alejandro Ruiz Prieto
+//GitHub: 
+
 import { Vehiculo } from "./vehiculo.js";
 import { AutomovilDeportivo } from "./automovilDeportivo.js";
 
@@ -24,3 +27,5 @@ vehiculo1.mostrarDatos();
 vehiculo1.arrancar();
 vehiculo1.acelerar(140);
 vehiculo1.frenar();
+
+deportivo1.mostrarDatos();

@@ -81,5 +81,7 @@ export class Vehiculo{
     },  El color es:  ${this.color}, El año de fabricacion es: ${
       this.AnoFabricacion
     }, La cilindrada es: ${this.#cilindra} <p/>`;
+    return dato;
   }
+  
 }
