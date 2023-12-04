@@ -22,7 +22,4 @@ export class AutomovilDeportivo extends Vehiculo {
     return this.#potenciaMotor;
   }
 
-
-
-
 }

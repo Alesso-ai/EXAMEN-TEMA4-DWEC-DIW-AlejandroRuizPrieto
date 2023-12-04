@@ -1,4 +1,4 @@
-
+import { mostrarResultado } from "./main.js";
 
 
 
@@ -24,7 +24,7 @@ export class Vehiculo{
     return `El vehículo acelera a ${velocidad} km/h`;
   }
   arrancar() {
-    return `El vehículo ha arrancando`;
+    return `El vehículo ha arrancado`;
   }
 
   frenar() {
@@ -33,7 +33,7 @@ export class Vehiculo{
 
   mostrarResultado() {
     resultados.innerHTML += `<p>${this.mostrarDatos()}</p>`;
-  }
+  } 
 
   //Getters y Setters
   getMarca() {
@@ -76,12 +76,17 @@ export class Vehiculo{
   }
 
   mostrarDatos() {
-    let dato = `<p>La marca es:  ${this.marca}, El modelo es: ${
+    const dato = `<p>La marca es:  ${this.marca}, El modelo es: ${
       this.modelo
     },  El color es:  ${this.color}, El año de fabricacion es: ${
       this.AnoFabricacion
     }, La cilindrada es: ${this.#cilindra} <p/>`;
-    return dato;
+    
+     mostrarResultado(`<p>${dato}</p>`)
   }
   
 }
+
+
+
+
