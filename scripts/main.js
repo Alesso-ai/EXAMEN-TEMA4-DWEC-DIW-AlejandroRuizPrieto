@@ -10,7 +10,6 @@ document.body.appendChild(resultadosContainer);
 resultadosContainer.innerHTML = "";
 
 export function mostrarResultado(dato) {
-  //document.body.appendChild(resultadosContainer);
   resultadosContainer.innerHTML += `<p>${dato}</p>`;
 }
 
@@ -36,8 +35,9 @@ vehiculo1.frenar();
 };
 
 
+
 localStorage.setItem("vehiculo1", JSON.stringify(vehiculoObject));
-console.log(localStorage.getItem("vehiculo1"));
+console.log(JSON.parse(localStorage.getItem("vehiculo1")));
 
 
 const deportivo1 = new AutomovilDeportivo(
@@ -71,7 +71,7 @@ const deportivoObject = {
 //Alamcenar en localStorage
 
 localStorage.setItem("deportivo1", JSON.stringify(deportivoObject));
-console.log(localStorage.getItem("deportivo1"));
+console.log(JSON.parse(localStorage.getItem("deportivo1")));
 
 
 
