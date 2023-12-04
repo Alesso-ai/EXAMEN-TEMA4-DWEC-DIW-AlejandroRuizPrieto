@@ -75,10 +75,10 @@ console.log(localStorage.getItem("deportivo1"));
 
 
 
-/*Funcionalidades de localStorage
-localStorage.removeItem("marca");
-localStorage.removeItem("modelo");
-localStorage.clear();
-*/
+
+//localStorage.removeItem("marca");
+//localStorage.removeItem("modelo");
+//localStorage.clear();
+
 
 

@@ -10,16 +10,7 @@ body {
   background-attachment: fixed;
   color: white;
 }
-h1 {
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 25ch;
-  color: white;
-  overflow: hidden;
-  animation: typing 5s steps(25), blink 0.5s infinite step-end alternate;
-}
+
 
 @keyframes typing {
   from {
@@ -41,7 +32,19 @@ h1 {
   justify-content: center;
   height: 20vh;
   margin-left: 25%;
+  margin-right: 25%;
   border-radius: 10px;
   font-size: 1em;
   color: black;
+}
+
+h1 {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 25ch;
+  color: white;
+  overflow: hidden;
+  animation: typing 5s steps(25), blink 0.5s infinite step-end alternate;
 }

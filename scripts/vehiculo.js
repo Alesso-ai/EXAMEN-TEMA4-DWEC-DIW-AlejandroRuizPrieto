@@ -49,10 +49,10 @@ export class Vehiculo{
     return this.color;
   }
 
-  getAnoFabricacion() {
+  getanoFabricacion() {
     return this.anoFabricacion;
   }
-  getCilindrada() {
+  getcilindrada() {
     return this.cilindra;
   }
 
@@ -69,7 +69,7 @@ export class Vehiculo{
   }
 
   setAnoFabricacion(value) {
-    this.AnoFabricacion = value;
+    this.AnoFabricacion = anoFabricacion;
   }
 
   setCilindrada(value) {
