@@ -87,6 +87,7 @@ console.log(JSON.parse(localStorage.getItem("deportivo1")));
  /* Elimina un campo del localStorage */
  localStorage.removeItem('marca');
  localStorage.removeItem('vehiculo');
+
  /*Elimina todos los campos del localStorage */
  /* localStorage.clear(); */
 
