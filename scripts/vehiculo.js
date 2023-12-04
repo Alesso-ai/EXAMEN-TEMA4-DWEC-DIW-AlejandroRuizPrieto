@@ -6,14 +6,14 @@ export class Vehiculo{
   #modelo;
   #color;
   #anoFabricacion;
-  #cilindra;
+  #cilindrada;
 
-  constructor(marca, modelo, color, anoFabricacion, cilindra) {
+  constructor(marca, modelo, color, anoFabricacion, cilindrada) {
     this.marca = marca;
     this.modelo = modelo;
     this.color = color;
     this.anoFabricacion = anoFabricacion;
-    this.cilindra = cilindra;
+    this.cilindrada = cilindrada;
   }
 
   //Metodos de la clase
@@ -53,7 +53,7 @@ export class Vehiculo{
     return this.anoFabricacion;
   }
   getcilindrada() {
-    return this.cilindra;
+    return this.cilindrada;
   }
 
   setMarca(value) {
@@ -72,8 +72,8 @@ export class Vehiculo{
     this.AnoFabricacion = anoFabricacion;
   }
 
-  setCilindrada(value) {
-    this.cilindra = cilindrada;
+  setcilindrada(value) {
+    this.cilindrada = cilindrada;
   }
 
 
@@ -81,8 +81,8 @@ export class Vehiculo{
     const dato = `<p>La marca es:  ${this.marca} <br> El modelo es: ${
       this.modelo
     }<br>  El color es:  ${this.color} <br> El año de fabricacion es: ${
-      this.AnoFabricacion
-    }<br> La cilindrada es: ${this.#cilindra} <p/>`;
+      this.anoFabricacion
+    }<br> La cilindrada es: ${this.cilindrada} <p/>`;
     
      mostrarResultado(`<p>${dato}</p>`)
   }

@@ -68,7 +68,7 @@ const deportivoObject = {
 
 
 
-//Alamcenar en localStorage
+//Alamacenar en localStorage
 
 localStorage.setItem("deportivo1", JSON.stringify(deportivoObject));
 console.log(JSON.parse(localStorage.getItem("deportivo1")));
